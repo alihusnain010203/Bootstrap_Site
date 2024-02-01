@@ -23,3 +23,12 @@ addToCart.addEventListener('click',()=>{
        
     }
     });
+
+   const updateDisplay=()=>{
+     if(localStorage.getItem('color')){
+        CartNumber.textContent=1;
+        addToCart.textContent='Remove from Cart'
+     }
+
+    }
+    updateDisplay();
